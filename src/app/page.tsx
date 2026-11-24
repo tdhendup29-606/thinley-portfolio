@@ -328,11 +328,13 @@ export default function Home() {
       category="Web Application"
     />
 
-    <ProjectCard
-      number="03"
-      title="AuthenTQ"
-      category="NFT Marketplace"
-    />
+<a href="/projects/authentq" className="block">
+  <ProjectCard
+    number="03"
+    title="AuthenTQ"
+    category="NFT Marketplace"
+  />
+</a>
 
   </div>
 </section>

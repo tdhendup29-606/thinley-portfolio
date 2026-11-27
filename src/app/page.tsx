@@ -1,6 +1,7 @@
 
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 import { motion } from "framer-motion";
 import {
@@ -314,27 +315,31 @@ export default function Home() {
     </p>
   </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+  <div className="flex flex-col gap-5">
 
-    <ProjectCard
-      number="01"
-      title="BlockBuild"
-      category="Blockchain Game"
-    />
+    <Link href="/projects/blockbuild" className="block">
+      <ProjectCard
+        number="01"
+        title="BlockBuild"
+        category="Blockchain Game"
+      />
+    </Link>
 
-    <ProjectCard
-      number="02"
-      title="Homestay Booking System"
-      category="Web Application"
-    />
+    <Link href="/projects/homestay" className="block">
+      <ProjectCard
+        number="02"
+        title="Homestay Booking System"
+        category="Web Application"
+      />
+    </Link>
 
-<a href="/projects/authentq" className="block">
-  <ProjectCard
-    number="03"
-    title="AuthenTQ"
-    category="NFT Marketplace"
-  />
-</a>
+    <Link href="/projects/onchain-wallet-profiler" className="block">
+      <ProjectCard
+        number="03"
+        title="OnChainWallet Profiler"
+        category="Blockchain Analytics"
+      />
+    </Link>
 
   </div>
 </section>
